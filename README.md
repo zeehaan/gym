@@ -1,4 +1,4 @@
-# vue-practice11
+# gym
 
 ## Project setup
 ```
