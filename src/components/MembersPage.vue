@@ -20,7 +20,11 @@
           <td>{{ item.phoneNo }}</td>
           <td>{{ item.membership }}</td>
           <td>
+<<<<<<< HEAD
             <v-chip :color="getColor(item.memberShipType)" dark>
+=======
+            <v-chip :color="getMembershipColor(item.memberShipType)" dark>
+>>>>>>> main
               {{ item.memberShipType }}
             </v-chip>
           </td>
@@ -50,36 +54,40 @@ export default {
     };
   },
   methods: {
-    getColor(memberShipType) {
-      if (memberShipType === 'PAID') return 'orange'; 
-      else if (memberShipType === 'NOT_PAID') return 'red';
-      return 'green';
+      getMembershipColor(type) {
+    const colorMap = {
+      'PAID': '#4CAF50',  
+      'NOT_PAID': '#F44336',
+      'EXPIRED': '#FF9800'
+    };
+    return colorMap[type] ;
     },
-    fetchMembers() {
-      const url = 'http://localhost:8080/api/v1/members';
-      axios.get(url)
-          .then((response) => {
-            if (response.status === 200 || response.status === 201 || response.status === 202) {
-              return response.data;
-            } else {
-              throw new Error("Could not fetch members!");
-            }
-          })
-          .then((data) => {
-            this.members = data.map(member => ({
-              fullName: `${member.firstName} ${member.lastName}`,
-              email: member.email,
-              age: member.age,
-              amount: member.amount,
-              phoneNo: member.phoneNo,
-              membership: member.membership,
-              memberShipType: member.memberShipType,
-            }));
-          })
-          .catch((error) => {
-            console.error('Error fetching members:', error);
-          });
+    async fetchMembers() {
+  try {
+    const response = await axios.get('http://localhost:8086/api/members', {
+      
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      }
+    });
+
+    if (response.status === 200) {
+      this.members = response.data.map(member => ({
+        fullName: `${member.firstName || ''} ${member.lastName || ''}`.trim(),
+        email: member.email || '',
+        age: member.age || 0,
+        amount: member.amount || 0,
+        phoneNo: member.phoneNo || '',
+        membership: member.membership || 0,
+        memberShipType: member.memberShipType || 'UNKNOWN'
+      }));
     }
+  } catch (error) {
+    console.error('Error fetching members:', error);
+    this.errorMessage = "Failed to load members. Please refresh or try again later.";
+  }
+}
   },
   mounted() {
     this.fetchMembers();  

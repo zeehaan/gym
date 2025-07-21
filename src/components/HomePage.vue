@@ -1,7 +1,7 @@
 <template>
   <div class="page-container">    
      <v-img 
-        src="../pictures/pic8.jpg" 
+        src="../pictures/Pic/pic8.jpg" 
         alt="Description of image"
         class="full-page-image">
     </v-img> 
@@ -131,6 +131,7 @@ export default {
     return {
       items:[
           {
+<<<<<<< HEAD
           src: require('../pictures/pic8.jpg'),
           },
           {
@@ -144,6 +145,21 @@ export default {
           },
           {
             src: require('../pictures/pic5.jpg'),
+=======
+          src: require('../pictures/Pic/pic8.jpg'),
+          },
+          {
+            src: require('../pictures/Pic/pic1.jpg'),
+          },
+          {
+            src: require('../pictures/Pic/pic3.jpg'),
+          },
+          {
+            src: require('../pictures/Pic/pic4.jpg'),
+          },
+          {
+            src: require('../pictures/Pic/pic5.jpg'),
+>>>>>>> main
           },
       ],
     }

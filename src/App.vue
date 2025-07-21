@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div data-app>
     <v-card>
     <v-tabs  >
     <v-tab  >      <router-link to="/" style="display: contents; width: 100%; height: 100%;">
