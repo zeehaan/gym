@@ -132,7 +132,9 @@ export default {
       } catch (error) {
         console.error('Error saving member:', error);
 
-        const errorMsg = error.response?.data?.message || 'Failed to save member';
+        message: (result && result.errors && result.errors[0] && result.errors[0].message) || 'Submission failed. Please try again.';
+
+        
 
         this.$toast.error(errorMsg);
       }

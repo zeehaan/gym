@@ -92,7 +92,7 @@ export default {
           // Handle Formspree-specific errors
           this.submitStatus = {
             type: 'error',
-            message: result?.errors?.[0]?.message || 'Submission failed. Please try again.'
+            message: (result && result.errors && result.errors[0] && result.errors[0].message) || 'Submission failed. Please try again.'
           };
         }
       } catch (error) {
