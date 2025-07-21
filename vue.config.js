@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-const { defineConfig } = require('@vue/cli-service')
-module.exports = defineConfig({
-  publicPath: '/gym/',
-  transpileDependencies: true
-})
-=======
 module.exports = {
   devServer: {
     proxy: {
@@ -18,4 +11,3 @@ module.exports = {
     }
   }
 }
->>>>>>> main

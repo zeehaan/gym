@@ -18,17 +18,6 @@ export default {
   data() {
     return {
       items: [
-<<<<<<< HEAD
-        { src: require('../pictures/lib1.jpg') },
-        { src: require('../pictures/lib2.jpg') },
-        { src: require('../pictures/lib3.jpg') },
-        { src: require('../pictures/lib4.jpg') },
-        { src: require('../pictures/lib5.jpg') },
-        { src: require('../pictures/lib6.jpg') },
-        { src: require('../pictures/lib7.jpg') },
-        { src: require('../pictures/lib8.jpg') },
-        { src: require('../pictures/lib9.jpg') },
-=======
         { src: require('../pictures/Lib/lib1.jpg') },
         { src: require('../pictures/Lib/lib2.jpg') },
         { src: require('../pictures/Lib/lib3.jpg') },
@@ -38,7 +27,6 @@ export default {
         { src: require('../pictures/Lib/lib7.jpg') },
         { src: require('../pictures/Lib/lib8.jpg') },
         { src: require('../pictures/Lib/lib9.jpg') },
->>>>>>> main
       ],
     };
   },

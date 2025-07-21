@@ -111,18 +111,10 @@ export default {
 
 
 <style scoped>
-<<<<<<< HEAD
-/* Main Section Styling */
-.contact-section {
-  padding: 5rem 1rem;
-  background-color: #0a0a0a;
-  background-image: linear-gradient(rgba(10, 10, 10, 0.9), rgba(10, 10, 10, 0.9)),
-=======
 .contact-section {
   padding: 5rem 1rem;
   background-color: #0a0a0a;
   background-image: linear-gradient(rgba(230, 217, 217, 0.9), rgba(236, 231, 231, 0.9)),
->>>>>>> main
     url('https://images.unsplash.com/photo-1581009137042-c552e485697a');
   background-size: cover;
   background-position: center;

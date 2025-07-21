@@ -20,11 +20,7 @@
           <td>{{ item.phoneNo }}</td>
           <td>{{ item.membership }}</td>
           <td>
-<<<<<<< HEAD
-            <v-chip :color="getColor(item.memberShipType)" dark>
-=======
             <v-chip :color="getMembershipColor(item.memberShipType)" dark>
->>>>>>> main
               {{ item.memberShipType }}
             </v-chip>
           </td>

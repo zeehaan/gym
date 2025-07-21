@@ -131,21 +131,6 @@ export default {
     return {
       items:[
           {
-<<<<<<< HEAD
-          src: require('../pictures/pic8.jpg'),
-          },
-          {
-            src: require('../pictures/pic1.jpg'),
-          },
-          {
-            src: require('../pictures/pic3.jpg'),
-          },
-          {
-            src: require('../pictures/pic4.jpg'),
-          },
-          {
-            src: require('../pictures/pic5.jpg'),
-=======
           src: require('../pictures/Pic/pic8.jpg'),
           },
           {
@@ -159,7 +144,6 @@ export default {
           },
           {
             src: require('../pictures/Pic/pic5.jpg'),
->>>>>>> main
           },
       ],
     }

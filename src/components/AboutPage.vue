@@ -45,22 +45,6 @@
       <ul class="values-list">
         <li>Inclusivity: We welcome everyone, regardless of fitness level, age, or background.</li>
         <li>Empowerment: We strive to empower our members to take control of their health and fitness journeys.</li>
-<<<<<<< HEAD
-        <li>Wellness: We promote a holistic approach to health, focusing on physical, mental, and emotional well-being.</li>
-      </ul>
-      
-      <h2 class="section-title">Join Us</h2>
-      <p class="join-us">
-        Are you ready to take the first step toward a healthier, happier you? Join us at <span class="gym-name">{{ gymName }}</span> and become a part of our thriving community. Whether you’re looking to lose weight, build muscle, or simply stay active, we are here to support you every step of the way.
-      </p>
-      <p class="call-to-action">
-        Visit us today for a tour of our facilities and a complimentary trial class. Let’s embark on this journey together!
-      </p>
-      
-      <h2 class="section-title">Contact Us</h2>
-      <p class="contact-info">
-        For more information, please reach out to us at <span class="contact-number">{{ contactInfo }}</span> or visit our Contact Page.
-=======
         <li>Wellness: We promote a holistic approach to health, focusing on physical, mental, and emotional well-being.
         </li>
       </ul>
@@ -80,7 +64,6 @@
       <p class="contact-info">
         For more information, please reach out to us at <span class="contact-number">{{ contactInfo }}</span> or visit
         our Contact Page.
->>>>>>> main
       </p>
     </v-img>
   </div>
@@ -97,14 +80,9 @@
   background-color: #f9f9f9;
   border-radius: 10px;
 } */
-<<<<<<< HEAD
- .about-us {
-  height: calc(100vh - 64px); /* Assuming your header is 64px tall */
-=======
 .about-us {
   height: calc(100vh - 64px);
   /* Assuming your header is 64px tall */
->>>>>>> main
   overflow-y: auto;
   font-family: 'Arial', sans-serif;
 }
@@ -122,12 +100,8 @@
 .content {
   max-width: 900px;
   margin: auto;
-<<<<<<< HEAD
-  background-color: rgba(0, 0, 0, 0.6); /* Optional readability */
-=======
   background-color: rgba(0, 0, 0, 0.6);
   /* Optional readability */
->>>>>>> main
   padding: 30px;
   border-radius: 10px;
   color: whitesmoke;
@@ -146,9 +120,6 @@ h1.title {
   color: #e74c3c;
 }
 
-<<<<<<< HEAD
-.intro, .description, .story, .community, .join-us, .call-to-action, .contact-info {
-=======
 .intro,
 .description,
 .story,
@@ -156,7 +127,6 @@ h1.title {
 .join-us,
 .call-to-action,
 .contact-info {
->>>>>>> main
   font-size: 1.1rem;
   color: whitesmoke;
   margin-bottom: 20px;
@@ -169,12 +139,8 @@ h2.section-title {
   margin-bottom: 10px;
 }
 
-<<<<<<< HEAD
-ul.facilities-list, ul.values-list {
-=======
 ul.facilities-list,
 ul.values-list {
->>>>>>> main
   margin-left: 20px;
   list-style-type: square;
   color: whitesmoke;
@@ -191,21 +157,13 @@ ul.values-list li {
   line-height: 1.5;
 }
 
-<<<<<<< HEAD
-.join-us, .call-to-action {
-=======
 .join-us,
 .call-to-action {
->>>>>>> main
   font-size: 1.2rem;
   color: whitesmoke;
 }
 
-<<<<<<< HEAD
-.contact-number { 
-=======
 .contact-number {
->>>>>>> main
   font-weight: bold;
   color: #e74c3c;
 }
