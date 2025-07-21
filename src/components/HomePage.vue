@@ -1,7 +1,7 @@
 <template>
   <div class="page-container">    
      <v-img 
-        src="../pictures/Pic/pic8.jpg" 
+        src="../pictures/Lib/lib6.jpg" 
         alt="Description of image"
         class="full-page-image">
     </v-img> 
