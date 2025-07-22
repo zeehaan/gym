@@ -2,7 +2,7 @@
 
 
   <div class="about-us">
-    <v-img src="../pictures/about-us-page.jpg" alt="Description of image" class="full-page-image">
+    <v-img :src="require('@/pictures/gym.jpg')" alt="Description of image" class="full-page-image">
 
       <h1 class="title">About Us</h1>
       <p class="intro">
